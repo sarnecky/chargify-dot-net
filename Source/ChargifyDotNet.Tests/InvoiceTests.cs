@@ -10,6 +10,21 @@ namespace ChargifyDotNetTests
     [TestClass]
     public class InvoiceTests : ChargifyTestBase
     {
+        
+        [TestMethod]
+        public void GetInvoice_NotExistingInvoiceId_ReturnNull()
+        {
+            var result = Chargify.GetInvoice("NotExistingInvoiceId");
+            Assert.IsNull(result);
+        }
+
+        [TestMethod]
+        public void GetInvoiceList_NotExistingSubsciptionId_ReturnNull()
+        {
+            var result = Chargify.GetInvoiceList("NotExistingSubsciptionId");
+            Assert.IsTrue(result.Count == 0);
+        }
+
         [TestMethod]
         public void Invoices_Can_Get_List()
         {

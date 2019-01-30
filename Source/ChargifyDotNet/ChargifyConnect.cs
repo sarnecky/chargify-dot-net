@@ -5424,6 +5424,66 @@ namespace ChargifyNET
         }
 
         /// <summary>
+        /// Gets a list of invoices for a specific subscription ID
+        /// </summary>
+        /// <returns></returns>
+        public IDictionary<int, Invoice> GetInvoiceList(string subscription_id)
+        {
+            // Construct the url to access Chargify
+            string url = string.Format("invoices.{0}?subscription_id={1}", GetMethodExtension(), subscription_id);
+            string response = DoRequest(url);
+            var retValue = new Dictionary<int, Invoice>();
+            if (response.IsXml())
+            {
+                // now build an invoice list based on response XML
+                retValue = GetListedXmlResponse<Invoice>("invoice", response);
+            }
+            else if (response.IsJSON())
+            {
+                // now build an invoice list based on response JSON
+                retValue = GetListedJsonResponse<Invoice>("invoice", response);
+            }
+            return retValue;
+        }
+
+        /// <summary>
+        /// This method will retrieve the invoice object based on the ID provided
+        /// </summary>
+        /// <returns></returns>
+        public IInvoice GetInvoice(string invoice_id)
+        {
+            try
+            {
+               return GetInvoiceById(invoice_id);
+            }
+            catch (ArgumentNullException argumentNullException)
+            {
+                return null;
+            }
+            catch (ArgumentException argumentException)
+            {
+                return null;
+            }
+            catch (ChargifyException cex)
+            {
+                if (cex.StatusCode == HttpStatusCode.NotFound)
+                    return null;
+                throw;
+            }
+        }
+
+        private IInvoice GetInvoiceById(string invoice_id)
+        {
+            if (string.IsNullOrEmpty(invoice_id))
+                throw new ArgumentNullException("invoice_id");
+
+            string url = string.Format("invoices/{0}.{1}", invoice_id, GetMethodExtension());
+            string response = DoRequest(url);
+
+            return new Invoice(JsonObject.Parse(response));
+        }
+
+        /// <summary>
         /// Add a payment to a specific invoice
         /// </summary>
         /// <param name="invoiceId">The id of the invoice</param>
