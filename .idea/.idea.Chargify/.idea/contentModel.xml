@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\chargify-dot-net" t="IncludeFlat">
+      <e p=".gitattributes" t="Include" />
+      <e p=".gitignore" t="Include" />
+      <e p=".nuget" t="Include">
+        <e p="packages.config" t="Include" />
+      </e>
+      <e p=".tfignore" t="Include" />
+      <e p=".travis.yml" t="Include" />
+      <e p="Chargify.sln" t="IncludeFlat" />
+      <e p="lib" t="Include" />
+      <e p="NuGet.config" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="samples" t="Include" />
+      <e p="Solution Items" t="Include" />
+      <e p="Source\ChargifyDotNet" t="IncludeRecursive">
+        <e p="Adjustment.cs" t="Include" />
+        <e p="BillingManagementInfo.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Charge.cs" t="Include" />
+        <e p="ChargifyBase.cs" t="Include" />
+        <e p="ChargifyConnect.cs" t="Include" />
+        <e p="ChargifyDotNet.csproj" t="IncludeRecursive" />
+        <e p="ChargifyEntity.cs" t="Include" />
+        <e p="ChargifyException.cs" t="Include" />
+        <e p="ChargifyPage.cs" t="Include" />
+        <e p="Component.cs" t="Include" />
+        <e p="ComponentAllocation.cs" t="Include" />
+        <e p="ComponentAttributes.cs" t="Include" />
+        <e p="ComponentInfo.cs" t="Include" />
+        <e p="Configuration" t="Include">
+          <e p="ChargifyAccountElement.cs" t="Include" />
+          <e p="ChargifyAccountElementCollection.cs" t="Include" />
+          <e p="ChargifyAccountRetrieverSection.cs" t="Include" />
+        </e>
+        <e p="Coupon.cs" t="Include" />
+        <e p="CouponUsage.cs" t="Include" />
+        <e p="Credit.cs" t="Include" />
+        <e p="CreditCardAttributes.cs" t="Include" />
+        <e p="Customer.cs" t="Include" />
+        <e p="CustomerAttributes.cs" t="Include" />
+        <e p="Data" t="Include">
+          <e p="Controls" t="Include">
+            <e p="CountryDropDownList.cs" t="Include" />
+          </e>
+          <e p="CountryNameLookup.cs" t="Include" />
+          <e p="ISO_3166-1_list_en.xml" t="Include" />
+        </e>
+        <e p="GlobalSuppressions.cs" t="Include" />
+        <e p="HttpRequestMethod.cs" t="Include" />
+        <e p="Interfaces" t="Include">
+          <e p="IAdjustment.cs" t="Include" />
+          <e p="IBillingManagementInfo.cs" t="Include" />
+          <e p="ICharge.cs" t="Include" />
+          <e p="IChargifyConnect.cs" t="Include" />
+          <e p="IComponent.cs" t="Include" />
+          <e p="IComponentAllocation.cs" t="Include" />
+          <e p="IComponentAttributes.cs" t="Include" />
+          <e p="IComponentInfo.cs" t="Include" />
+          <e p="ICoupon.cs" t="Include" />
+          <e p="ICouponUsage.cs" t="Include" />
+          <e p="ICredit.cs" t="Include" />
+          <e p="ICreditCardAttributes.cs" t="Include" />
+          <e p="ICustomer.cs" t="Include" />
+          <e p="ICustomerAttributes.cs" t="Include" />
+          <e p="IInvoice.cs" t="Include" />
+          <e p="IInvoicePaymentAndCredit.cs" t="Include" />
+          <e p="IMetadata.cs" t="Include" />
+          <e p="IMetadataResult.cs" t="Include" />
+          <e p="IMigration.cs" t="Include" />
+          <e p="INote.cs" t="Include" />
+          <e p="IPayment.cs" t="Include" />
+          <e p="IPaymentProfileAttributes.cs" t="Include" />
+          <e p="IPaymentProfileBase.cs" t="Include" />
+          <e p="IPaymentProfileView.cs" t="Include" />
+          <e p="IProduct.cs" t="Include" />
+          <e p="IProductFamily.cs" t="Include" />
+          <e p="IProductFamilyAttributes.cs" t="Include" />
+          <e p="IPublicSignupPage.cs" t="Include" />
+          <e p="IReferralCode.cs" t="Include" />
+          <e p="IRefund.cs" t="Include" />
+          <e p="IRenewalDetails.cs" t="Include" />
+          <e p="ISiteStatistics.cs" t="Include" />
+          <e p="IStatement.cs" t="Include" />
+          <e p="ISubscription.cs" t="Include" />
+          <e p="ISubscriptionCreateOptions.cs" t="Include" />
+          <e p="ISubscriptionOverride.cs" t="Include" />
+          <e p="ISubscriptionPreview.cs" t="Include" />
+          <e p="ITransaction.cs" t="Include" />
+          <e p="IUsage.cs" t="Include" />
+        </e>
+        <e p="Invoice.cs" t="Include" />
+        <e p="Json" t="Include">
+          <e p="JsonArray.cs" t="Include" />
+          <e p="JsonBoolean.cs" t="Include" />
+          <e p="JsonException.cs" t="Include" />
+          <e p="JsonHelper.cs" t="Include" />
+          <e p="JsonNumber.cs" t="Include" />
+          <e p="JsonObject.cs" t="Include" />
+          <e p="JsonString.cs" t="Include" />
+          <e p="JsonValue.cs" t="Include" />
+          <e p="XmlToJson.cs" t="Include" />
+        </e>
+        <e p="Metadata.cs" t="Include" />
+        <e p="MetadataResult.cs" t="Include" />
+        <e p="Metafield.cs" t="Include" />
+        <e p="Migration.cs" t="Include" />
+        <e p="Note.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net40" t="Include">
+              <e p="ChargifyDotNet.AssemblyInfo.cs" t="Include" />
+            </e>
+            <e p="net45" t="Include">
+              <e p="ChargifyDotNet.AssemblyInfo.cs" t="Include" />
+            </e>
+            <e p="netstandard2.0" t="Include">
+              <e p="ChargifyDotNet.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Payment.cs" t="Include" />
+        <e p="PaymentProfileAttributes.cs" t="Include" />
+        <e p="PaymentProfileBase.cs" t="Include" />
+        <e p="PaymentProfileView.cs" t="Include" />
+        <e p="PCLWebUtility" t="Include">
+          <e p="ExtendedHtmlUtility.cs" t="Include" />
+          <e p="UrlUtility.cs" t="Include" />
+          <e p="WebUtility.cs" t="Include" />
+        </e>
+        <e p="Product.cs" t="Include" />
+        <e p="ProductFamily.cs" t="Include" />
+        <e p="ProductFamilyAttributes.cs" t="Include" />
+        <e p="PublicSignupPage.cs" t="Include" />
+        <e p="RefferalCode.cs" t="Include" />
+        <e p="Refund.cs" t="Include" />
+        <e p="RenewalDetails.cs" t="Include" />
+        <e p="Sites.cs" t="Include" />
+        <e p="SiteStatistics.cs" t="Include" />
+        <e p="Statement.cs" t="Include" />
+        <e p="Subscription.cs" t="Include" />
+        <e p="SubscriptionOverride.cs" t="Include" />
+        <e p="SubscriptionPostbackHandler.cs" t="Include" />
+        <e p="SubscriptionPreview.cs" t="Include" />
+        <e p="Transaction.cs" t="Include" />
+        <e p="Usage.cs" t="Include" />
+        <e p="UsefulExtensions.cs" t="Include" />
+        <e p="WebhookHandler.cs" t="Include" />
+      </e>
+      <e p="Source\ChargifyDotNet.Tests" t="IncludeRecursive">
+        <e p="AdjustmentTests.cs" t="Include" />
+        <e p="AllocationTests.cs" t="Include" />
+        <e p="Base" t="Include">
+          <e p="ChargifyTestBase.cs" t="Include" />
+          <e p="RandomProvider.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ChargeTests.cs" t="Include" />
+        <e p="ChargifyDotNet.Tests.csproj" t="IncludeRecursive" />
+        <e p="ComponentTests.cs" t="Include" />
+        <e p="CouponTests.cs" t="Include" />
+        <e p="CustomerTests.cs" t="Include" />
+        <e p="InvoiceTests.cs" t="Include" />
+        <e p="MetadataTests.cs" t="Include" />
+        <e p="MetafieldTests.cs" t="Include" />
+        <e p="MigrationTests.cs" t="Include" />
+        <e p="NoteTests.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net45" t="Include">
+              <e p="ChargifyDotNet.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+            <e p="netcoreapp2.0" t="Include">
+              <e p="ChargifyDotNet.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PaymentProfileTests.cs" t="Include" />
+        <e p="PaymentTests.cs" t="Include" />
+        <e p="PortalTests.cs" t="Include" />
+        <e p="ProductFamilyTests.cs" t="Include" />
+        <e p="ProductTests.cs" t="Include" />
+        <e p="ReferralCodeTests.cs" t="Include" />
+        <e p="RenewalPreviewTests.cs" t="Include" />
+        <e p="SiteTests.cs" t="Include" />
+        <e p="StatementTests.cs" t="Include" />
+        <e p="StatTests.cs" t="Include" />
+        <e p="SubscriptionOverrideTests.cs" t="Include" />
+        <e p="SubscriptionPreviewTests.cs" t="Include" />
+        <e p="SubscriptionTests.cs" t="Include" />
+      </e>
+      <e p="Source\ChargifyNetSample.MVC" t="IncludeRecursive">
+        <e p="App_Data" t="Include" />
+        <e p="App_Start" t="Include">
+          <e p="BundleConfig.cs" t="Include" />
+          <e p="FilterConfig.cs" t="Include" />
+          <e p="RouteConfig.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ChargifyNetSample.MVC.csproj" t="IncludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="bootstrap-theme.css" t="Include" />
+          <e p="bootstrap-theme.min.css" t="Include" />
+          <e p="bootstrap.css" t="Include" />
+          <e p="bootstrap.min.css" t="Include" />
+          <e p="Site.css" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="HomeController.cs" t="Include" />
+        </e>
+        <e p="favicon.ico" t="Include" />
+        <e p="fonts" t="Include">
+          <e p="glyphicons-halflings-regular.eot" t="Include" />
+          <e p="glyphicons-halflings-regular.svg" t="Include" />
+          <e p="glyphicons-halflings-regular.ttf" t="Include" />
+          <e p="glyphicons-halflings-regular.woff" t="Include" />
+        </e>
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="Models" t="Include">
+          <e p="PayloadModels.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Project_Readme.html" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="_references.js" t="Include" />
+          <e p="bootstrap.js" t="Include" />
+          <e p="bootstrap.min.js" t="Include" />
+          <e p="jquery-1.10.2.intellisense.js" t="Include" />
+          <e p="jquery-1.10.2.js" t="Include" />
+          <e p="jquery-1.10.2.min.js" t="Include" />
+          <e p="jquery-1.10.2.min.map" t="Include" />
+          <e p="jquery.validate-vsdoc.js" t="Include" />
+          <e p="jquery.validate.js" t="Include" />
+          <e p="jquery.validate.min.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+          <e p="modernizr-2.6.2.js" t="Include" />
+          <e p="respond.js" t="Include" />
+          <e p="respond.min.js" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Home" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="Error.cshtml" t="Include" />
+          </e>
+          <e p="Web.config" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="Source\ChargifyNetSample.Web" t="IncludeRecursive">
+        <e p="About.aspx" t="Include" />
+        <e p="About.aspx.designer.vb" t="Include" />
+        <e p="About.aspx.vb" t="Include" />
+        <e p="Account" t="Include">
+          <e p="Login.aspx" t="Include" />
+          <e p="Login.aspx.designer.vb" t="Include" />
+          <e p="Login.aspx.vb" t="Include" />
+          <e p="Manage.aspx" t="Include" />
+          <e p="Manage.aspx.designer.vb" t="Include" />
+          <e p="Manage.aspx.vb" t="Include" />
+          <e p="OpenAuthProviders.ascx" t="Include" />
+          <e p="OpenAuthProviders.ascx.designer.vb" t="Include" />
+          <e p="OpenAuthProviders.ascx.vb" t="Include" />
+          <e p="Register.aspx" t="Include" />
+          <e p="Register.aspx.designer.vb" t="Include" />
+          <e p="Register.aspx.vb" t="Include" />
+          <e p="RegisterExternalLogin.aspx" t="Include" />
+          <e p="RegisterExternalLogin.aspx.designer.vb" t="Include" />
+          <e p="RegisterExternalLogin.aspx.vb" t="Include" />
+          <e p="Web.config" t="Include" />
+        </e>
+        <e p="App_Code" t="Include">
+          <e p="BasePage.vb" t="Include" />
+          <e p="ChargifyBase.vb" t="Include" />
+        </e>
+        <e p="App_Data" t="Include" />
+        <e p="App_Readme" t="Include">
+          <e p="Elmah.txt" t="Include" />
+        </e>
+        <e p="App_Start" t="Include">
+          <e p="BundleConfig.vb" t="Include" />
+          <e p="RouteConfig.vb" t="Include" />
+          <e p="Startup.Auth.vb" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Bundle.config" t="Include" />
+        <e p="ChargifyNetSample.Web.vbproj" t="IncludeRecursive" />
+        <e p="Contact.aspx" t="Include" />
+        <e p="Contact.aspx.designer.vb" t="Include" />
+        <e p="Contact.aspx.vb" t="Include" />
+        <e p="Content" t="Include">
+          <e p="bootstrap.css" t="Include" />
+          <e p="bootstrap.min.css" t="Include" />
+          <e p="Site.css" t="Include" />
+        </e>
+        <e p="Controllers" t="Include" />
+        <e p="Default.aspx" t="Include" />
+        <e p="Default.aspx.designer.vb" t="Include" />
+        <e p="Default.aspx.vb" t="Include" />
+        <e p="favicon.ico" t="Include" />
+        <e p="fonts" t="Include">
+          <e p="glyphicons-halflings-regular.eot" t="Include" />
+          <e p="glyphicons-halflings-regular.svg" t="Include" />
+          <e p="glyphicons-halflings-regular.ttf" t="Include" />
+          <e p="glyphicons-halflings-regular.woff" t="Include" />
+        </e>
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.vb" t="Include" />
+        <e p="Migrations" t="Include">
+          <e p="201310291616332_Initial.Designer.vb" t="Include" />
+          <e p="201310291616332_Initial.resx" t="Include" />
+          <e p="201310291616332_Initial.vb" t="Include" />
+          <e p="Configuration.vb" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="IdentityModels.vb" t="Include" />
+        </e>
+        <e p="My Project" t="Include">
+          <e p="Application.Designer.vb" t="Include" />
+          <e p="Application.myapp" t="Include" />
+          <e p="AssemblyInfo.vb" t="Include" />
+          <e p="MyExtensions" t="Include">
+            <e p="MyWebExtension.vb" t="Include" />
+          </e>
+          <e p="PublishProfiles" t="Include">
+            <e p="chargifynet.pubxml" t="Include" />
+          </e>
+          <e p="Resources.Designer.vb" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.vb" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Project_Readme.html" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="_references.js" t="Include" />
+          <e p="bootstrap.js" t="Include" />
+          <e p="bootstrap.min.js" t="Include" />
+          <e p="jquery-1.10.2.intellisense.js" t="Include" />
+          <e p="jquery-1.10.2.js" t="Include" />
+          <e p="jquery-1.10.2.min.js" t="Include" />
+          <e p="jquery-1.10.2.min.map" t="Include" />
+          <e p="modernizr-2.6.2.js" t="Include" />
+          <e p="respond.js" t="Include" />
+          <e p="respond.min.js" t="Include" />
+          <e p="WebForms" t="Include">
+            <e p="DetailsView.js" t="Include" />
+            <e p="Focus.js" t="Include" />
+            <e p="GridView.js" t="Include" />
+            <e p="Menu.js" t="Include" />
+            <e p="MenuStandards.js" t="Include" />
+            <e p="MSAjax" t="Include">
+              <e p="MicrosoftAjax.js" t="Include" />
+              <e p="MicrosoftAjaxApplicationServices.js" t="Include" />
+              <e p="MicrosoftAjaxComponentModel.js" t="Include" />
+              <e p="MicrosoftAjaxCore.js" t="Include" />
+              <e p="MicrosoftAjaxGlobalization.js" t="Include" />
+              <e p="MicrosoftAjaxHistory.js" t="Include" />
+              <e p="MicrosoftAjaxNetwork.js" t="Include" />
+              <e p="MicrosoftAjaxSerialization.js" t="Include" />
+              <e p="MicrosoftAjaxTimer.js" t="Include" />
+              <e p="MicrosoftAjaxWebForms.js" t="Include" />
+              <e p="MicrosoftAjaxWebServices.js" t="Include" />
+            </e>
+            <e p="SmartNav.js" t="Include" />
+            <e p="TreeView.js" t="Include" />
+            <e p="WebForms.js" t="Include" />
+            <e p="WebParts.js" t="Include" />
+            <e p="WebUIValidation.js" t="Include" />
+          </e>
+        </e>
+        <e p="Site.Master" t="Include" />
+        <e p="Site.Master.designer.vb" t="Include" />
+        <e p="Site.Master.vb" t="Include" />
+        <e p="Site.Mobile.Master" t="Include" />
+        <e p="Site.Mobile.Master.designer.vb" t="Include" />
+        <e p="Site.Mobile.Master.vb" t="Include" />
+        <e p="Startup.vb" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Web.config" t="Include" />
+        </e>
+        <e p="ViewSwitcher.ascx" t="Include" />
+        <e p="ViewSwitcher.ascx.designer.vb" t="Include" />
+        <e p="ViewSwitcher.ascx.vb" t="Include" />
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="Source\ConsumerApp.Net40" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ConsumerApp.Net40.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Source\ConsumerApp.Net452" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ConsumerApp.Net452.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Source\ConsumerApp.NetCore" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ConsumerApp.NetCore.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.0" t="Include">
+              <e p="ConsumerApp.NetCore.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="tests" t="Include" />
+      <e p="version.json" t="Include" />
+    </e>
+    <e p="C:\Users\admin\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\admin\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Chargify.-715896731.00" t="ExcludeRecursive" />
+  </component>
+</project>
