@@ -5427,7 +5427,7 @@ namespace ChargifyNET
         /// Gets a list of invoices for a specific subscription ID
         /// </summary>
         /// <returns></returns>
-        public IDictionary<int, Invoice> GetInvoiceList(string subscription_id)
+        public IDictionary<int, Invoice> GetInvoiceList(int subscription_id)
         {
             // Construct the url to access Chargify
             string url = string.Format("invoices.{0}?subscription_id={1}", GetMethodExtension(), subscription_id);
@@ -5450,7 +5450,7 @@ namespace ChargifyNET
         /// This method will retrieve the invoice object based on the ID provided
         /// </summary>
         /// <returns></returns>
-        public IInvoice GetInvoice(string invoice_id)
+        public IInvoice GetInvoice(int invoice_id)
         {
             try
             {
@@ -5472,15 +5472,14 @@ namespace ChargifyNET
             }
         }
 
-        private IInvoice GetInvoiceById(string invoice_id)
+        private IInvoice GetInvoiceById(int invoice_id)
         {
-            if (string.IsNullOrEmpty(invoice_id))
-                throw new ArgumentNullException("invoice_id");
-
-            string url = string.Format("invoices/{0}.{1}", invoice_id, GetMethodExtension());
+            string url = string.Format("invoices/{0}.{1}", invoice_id, "json");
             string response = DoRequest(url);
+            JsonObject.Parse(response).TryGetValue("invoice", out JsonValue jsonObject);
 
-            return new Invoice(JsonObject.Parse(response));
+            var invoice = new Invoice(jsonObject as JsonObject);
+            return invoice;
         }
 
         /// <summary>
