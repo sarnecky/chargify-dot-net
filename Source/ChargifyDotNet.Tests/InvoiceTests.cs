@@ -10,6 +10,55 @@ namespace ChargifyDotNetTests
     [TestClass]
     public class InvoiceTests : ChargifyTestBase
     {
+        
+        [TestMethod]
+        public void GetInvoice_NotExistingInvoiceId_ReturnNull()
+        {
+            var notExistingId = int.MaxValue;
+            var result = Chargify.GetInvoice(notExistingId);
+            Assert.IsNull(result);
+        }
+
+        [TestMethod]
+        public void GetInvoiceList_NotExistingSubsciptionId_ReturnNull()
+        {
+            var notExistingId = int.MaxValue;
+            var result = Chargify.GetInvoiceList(notExistingId);
+            Assert.IsTrue(result.Count == 0);
+        }
+
+        [TestMethod]
+        public void GetInvoiceList_ExistingSubsciptionId_ReturnInvoicesWithSubscriptionId()
+        {
+            var invoices = Chargify.GetInvoiceList().Values;
+            if (!invoices.Any())
+                Assert.Inconclusive("There are no valid invoices for use in this test.");
+
+            var expectedInvoice = invoices.FirstOrDefault();
+
+            var invoiceList = Chargify.GetInvoiceList(expectedInvoice.SubscriptionID);
+            var targetInvoice = invoiceList.FirstOrDefault();
+
+            Assert.IsNotNull(targetInvoice);
+            Assert.IsTrue(targetInvoice.Value.SubscriptionID == expectedInvoice.SubscriptionID);
+            Assert.IsTrue(invoiceList.FirstOrDefault(i => i.Value.SubscriptionID != expectedInvoice.SubscriptionID).Value == null);
+        }
+
+        [TestMethod]
+        public void GetInvoice_ExistingInvoiceId_ReturnInvoiceWithPassedInvoiceId()
+        {
+            var invoices = Chargify.GetInvoiceList().Values;
+            if (!invoices.Any())
+                Assert.Inconclusive("There are no valid invoices for use in this test.");
+
+            var expectedInvoice = invoices.FirstOrDefault();
+
+            var invoice = Chargify.GetInvoice(expectedInvoice.ID);
+
+            Assert.IsNotNull(invoice);
+            Assert.IsTrue(invoice.ID == expectedInvoice.ID);
+        }
+
         [TestMethod]
         public void Invoices_Can_Get_List()
         {
@@ -38,7 +87,7 @@ namespace ChargifyDotNetTests
 
             // Act
             var result = Chargify.CreateSubscription(product.Handle, customer.ChargifyID, PaymentCollectionMethod.Invoice);
-
+            
             // Assert
             //Assert.IsInstanceOfType(result, typeof(Subscription));
             Assert.IsNotNull(result);

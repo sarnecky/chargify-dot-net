@@ -252,6 +252,16 @@ namespace ChargifyNET
         /// <returns></returns>
         IDictionary<int, Invoice> GetInvoiceList();
         /// <summary>
+        /// Gets a list of invoices for a specific subscription ID
+        /// </summary>
+        /// <returns></returns>
+        IDictionary<int, Invoice> GetInvoiceList(int subscription_id);
+        /// <summary>
+        /// This method will retrieve the invoice object based on the ID provided
+        /// </summary>
+        /// <returns></returns>
+        IInvoice GetInvoice(int invoice_id);
+        /// <summary>
         /// Add a payment to a specific invoice
         /// </summary>
         /// <param name="invoiceId">The id of the invoice</param>
